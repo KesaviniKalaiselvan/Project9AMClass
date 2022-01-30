@@ -18,6 +18,8 @@ public class FlipkartTask extends BaseClass {
 		webElementClick(f.getClosebtn());
 		sendKeys(f.getSearchbox(), "iphone");
 		webElementClick(f.getSearchbtn());
+		System.out.println("test345");
+		System.out.println("test5467");
 		
 		
 		
