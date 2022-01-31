@@ -21,7 +21,8 @@ private void test1() throws InterruptedException {
 		webElementClick(f.getClosebtn());
 		sendKeys(f.getSearchbox(), "iphone");
 		webElementClick(f.getSearchbtn());
-		
+		System.out.println("test1");
+		System.out.println("test2");
 		String text1 = getText(f.getIphone1());
 		System.out.println(text1);
 		
