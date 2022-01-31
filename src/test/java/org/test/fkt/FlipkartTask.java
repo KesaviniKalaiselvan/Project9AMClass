@@ -2,11 +2,14 @@ package org.test.fkt;
 
 import org.test.baseclass.BaseClass;
 import org.test.pages.FirstPage;
+import org.testng.annotations.Test;
 
 public class FlipkartTask extends BaseClass {
 	
-	public static void main(String[] args) throws InterruptedException {
-		
+@Test
+private void test1() throws InterruptedException {
+	
+
 		chromeLaunch();
 		urlLaunch("https://www.flipkart.com/");
 		windowMaximize();
@@ -18,11 +21,9 @@ public class FlipkartTask extends BaseClass {
 		webElementClick(f.getClosebtn());
 		sendKeys(f.getSearchbox(), "iphone");
 		webElementClick(f.getSearchbtn());
-		System.out.println("test345");
-		System.out.println("test5467");
 		
-		
-		
+		String text1 = getText(f.getIphone1());
+		System.out.println(text1);
 		
 	}
 	

@@ -1,3 +1,4 @@
+
 package org.test.pages;
 
 import org.openqa.selenium.WebElement;
@@ -21,6 +22,14 @@ public class FirstPage extends BaseClass {
 	
 	@FindBy(xpath="//button[@class='L0Z3Pu']")
 	private WebElement searchbtn;
+	
+	@FindBy(xpath="(//div[@class='_4rR01T'])[1]")
+	private WebElement iphone1;
+	
+
+	public WebElement getIphone1() {
+		return iphone1;
+	}
 
 	public WebElement getSearchbtn() {
 		return searchbtn;
